@@ -1,0 +1,26 @@
+INDEX VERSION 1.131+C:\Users\arthu\OneDrive\Área de Trabalho\ws_eclipse\.metadata\.plugins\org.eclipse.jdt.core
+829193340.index
+1673515529.index
+557424068.index
+1411132526.index
+3090205822.index
+1023454090.index
+1181437162.index
+2296838412.index
+327888441.index
+2845484808.index
+3624917321.index
+3510846143.index
+230286539.index
+3645561035.index
+4269759981.index
+2508929818.index
+3722629557.index
+1090947315.index
+3624956869.index
+3763726863.index
+3476552936.index
+1865797976.index
+691338785.index
+1587680339.index
+833386100.index
