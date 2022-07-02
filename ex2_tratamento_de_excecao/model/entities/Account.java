@@ -1,6 +1,8 @@
 package model.entities;
 
-public class Account {
+import model.impl.AccountImpl;
+
+public abstract class Account implements AccountImpl {
 
     private Integer number;
     private String holder;
@@ -8,7 +10,6 @@ public class Account {
     private Double withdrawalLimit;
 
     public Account() {
-
     }
 
     public Account(Integer number, String holder, Double balance, Double withdrawalLimit) {
@@ -42,21 +43,22 @@ public class Account {
         return withdrawalLimit;
     }
 
+    public void setWithdrawalLimit(Double withdrawalLimit) {
+        this.withdrawalLimit = withdrawalLimit;
+    }
+
+    // Metodo para depositar na conta.
+    @Override
     public void deposit(Double amount) {
         this.balance += amount;
     }
 
+    // Metodo para sacar da conta.
+    @Override
     public void withdrawal(Double amount) {
-        this.balance -= amount;
+        balance -= amount;
     }
 
-    @Override
-    public String toString() {
-        return "Account{" +
-                "number=" + number +
-                ", holder='" + holder + '\'' +
-                ", balance=" + balance +
-                ", withdrawalLimit=" + withdrawalLimit +
-                '}';
-    }
+    // Metodo para validar o saque da conta.
+    public abstract void validateWithdrawl(double amount);
 }
